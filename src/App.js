@@ -221,11 +221,11 @@ function Hero() {
 // Photo Gallery Section
 function Gallery() {
   const images = [
-    { src: '/images/photo-1.png', alt: 'Croissant caramélisé aux fruits rouges et chantilly' },
-    { src: '/images/photo-2.png', alt: 'Shakshuka maison et latte aux pétales de rose' },
-    { src: '/images/photo-3.png', alt: 'Assiette méditerranéenne avec burrata et légumes grillés' },
-    { src: '/images/photo-4.png', alt: 'Toast avocat saumon et œuf poché' },
-    { src: '/images/photo-5.png', alt: 'Croque-monsieur gourmand et frites maison' }
+    { src: process.env.PUBLIC_URL + '/images/photo-1.png', alt: 'Croissant caramélisé aux fruits rouges et chantilly' },
+    { src: process.env.PUBLIC_URL + '/images/photo-2.png', alt: 'Shakshuka maison et latte aux pétales de rose' },
+    { src: process.env.PUBLIC_URL + '/images/photo-3.png', alt: 'Assiette méditerranéenne avec burrata et légumes grillés' },
+    { src: process.env.PUBLIC_URL + '/images/photo-4.png', alt: 'Toast avocat saumon et œuf poché' },
+    { src: process.env.PUBLIC_URL + '/images/photo-5.png', alt: 'Croque-monsieur gourmand et frites maison' }
   ];
 
   return (
@@ -267,7 +267,7 @@ function About() {
           <div className="about-image">
             <div className="about-image-frame">
               <img 
-                src="/images/about.png" 
+                src={process.env.PUBLIC_URL + '/images/about.png'} 
                 alt="Intérieur chaleureux du café"
               />
             </div>
